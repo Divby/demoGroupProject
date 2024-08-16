@@ -1,3 +1,16 @@
+/** Variable colors **
+** To use variable colors, use var(--color-name) **
+** Example: color: var(--yellow); **/
+
+:root {
+  --yellow: #fbffa7;
+  --light-blue: #b1c5ff;
+  --green: #b6ffc0;
+  --orange: #ff764d;
+  --purple: #d5b3ff;
+  --dark-blue: #0000ff;
+}
+
 /* Box Model Hack */
 * {
   box-sizing: border-box;
@@ -21,22 +34,68 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
-
+html {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
 
+/*NAVIGATION BAR*/
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  white-space: nowrap;
+  font-size: 1.1rem;
+  padding: 0.3rem 2rem;
+  border-bottom: 1px solid lightgray;
 }
 
-footer {
-
+.navigation img {
+  width: 80px;
+  object-fit: contain;
 }
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.links ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.links ul li:last-of-type a{
+  color: var(--orange);
+}
+
+.nav-right {
+  gap: 1.5rem;
+  padding-right: 1rem;
+}
+
+.nav-right p:first-of-type a {
+  color: var(--dark-blue);
+}
+
+.nav-right p:last-of-type {
+  font-size: 0.8rem;
+}
