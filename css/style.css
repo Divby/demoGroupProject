@@ -18,16 +18,16 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /******************************************
@@ -73,7 +73,8 @@ a {
   object-fit: contain;
 }
 
-.nav-left, .nav-right {
+.nav-left,
+.nav-right {
   display: flex;
   align-items: center;
 }
@@ -83,7 +84,7 @@ a {
   gap: 1.5rem;
 }
 
-.links ul li:last-of-type a{
+.links ul li:last-of-type a {
   color: var(--orange);
 }
 
@@ -105,9 +106,9 @@ a {
   padding: 0.5rem 0;
 }
 
-.about-nav ul{
+.about-nav ul {
   display: flex;
-  gap: 1.5rem
+  gap: 1.5rem;
 }
 
 .about-nav ul li:first-of-type a {
@@ -117,8 +118,11 @@ a {
 /*HERO SECTION*/
 
 .hero-section {
-  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
-  url('/images/ableton-hero-img.jpg');
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+    url('/images/ableton-hero-img.jpg');
   background-size: cover;
   background-position: center;
   width: 85%;
@@ -131,10 +135,16 @@ a {
   justify-content: center;
   align-items: center;
   height: 100%;
-  color: #FD5948;
+  color: #fd5948;
   font-size: 7.5rem;
 }
 
+/* video section styling */
+
+.videoSection {
+  display: flex;
+  justify-content: center;
+}
 /*TEXT AREA - HOPEFULLY WE CAN REUSE THESE FOR FUTURE TEXT AREAS*/
 
 .text-container {
