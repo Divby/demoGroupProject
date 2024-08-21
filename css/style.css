@@ -41,6 +41,7 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
 ul {
@@ -61,7 +62,6 @@ a {
 .navigation {
   display: flex;
   justify-content: space-between;
-  font-weight: 500;
   white-space: nowrap;
   font-size: 1.1rem;
   padding: 0.3rem 2rem;
@@ -89,7 +89,7 @@ a {
 
 .nav-right {
   gap: 1.5rem;
-  padding-right: 1rem;
+  padding-right: 1.5rem;
 }
 
 .nav-right p:first-of-type a {
@@ -98,4 +98,62 @@ a {
 
 .nav-right p:last-of-type {
   font-size: 0.8rem;
+}
+
+.about-nav {
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+}
+
+.about-nav ul{
+  display: flex;
+  gap: 1.5rem
+}
+
+.about-nav ul li:first-of-type a {
+  color: var(--orange);
+}
+
+/*HERO SECTION*/
+
+.hero-section {
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+  url('/images/ableton-hero-img.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 85%;
+  margin: 0 auto;
+  height: 85vh;
+}
+
+.hero-section span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #FD5948;
+  font-size: 7.5rem;
+}
+
+/*TEXT AREA - HOPEFULLY WE CAN REUSE THESE FOR FUTURE TEXT AREAS*/
+
+.text-container {
+  padding: 7rem 0;
+  line-height: 1.8;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.accent-blue {
+  color: var(--dark-blue);
+}
+
+.text-large {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.text-small {
+  width: 105%;
+  font-weight: 400;
 }
